@@ -1,0 +1,6 @@
+@JwtMongo_HostAddress = http://localhost:5110
+
+GET {{JwtMongo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,25 @@
+﻿@model Register
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Register User</h1>
+<form method="post">
+    <label for="email">Email </label>
+    <input type="email" id="email" class="form-control" asp-for="Email" />
+    <span asp-validation-for="Email" class="text-danger"></span>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" class="form-control" asp-for="Password" />
+    <span asp-validation-for="Password" class="text-danger"></span>
+
+    <label for="cassword">Confirm Password</label>
+    <input type="password" id="cpassword" class="form-control" asp-for="ConfirmPassword" />
+    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
+    <button class="btn btn-primary">
+        Register
+    </button>
+
+</form>

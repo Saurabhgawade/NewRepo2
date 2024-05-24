@@ -1,0 +1,6 @@
+@tokenapi_HostAddress = http://localhost:5106
+
+GET {{tokenapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

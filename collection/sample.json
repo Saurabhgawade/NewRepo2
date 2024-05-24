@@ -1,0 +1,37 @@
+[
+  {
+    "name": "saurabh",
+    "gender": "male",
+    "physics": 20,
+    "math": 40,
+    "chemistry": 42
+  },
+  {
+    "name": "gita",
+    "gender": "female",
+    "physics": 30,
+    "math": 490,
+    "chemistry": 12
+  },
+  {
+    "name": "abhi",
+    "gender": "male",
+    "physics": 20,
+    "math": 40,
+    "chemistry": 42
+  },
+  {
+    "name": "sabh",
+    "gender": "male",
+    "physics": 20,
+    "math": 40,
+    "chemistry": 42
+  },
+  {
+    "name": "sauh",
+    "gender": "female",
+    "physics": 20,
+    "math": 40,
+    "chemistry": 42
+  }
+]

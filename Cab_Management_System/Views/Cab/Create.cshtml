@@ -1,0 +1,31 @@
+﻿@model Cab
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post">
+    <label for="id">Cab Id</labe>
+    <input  id="id" class="form-control" type="number" asp-for="CabId"/>
+    <span asp-validation-for="CabId" class="text-danger"></span>
+
+        <label for="from">From</labe>
+        <input id="from" class="form-control" type="text" asp-for="From"/>
+            <span asp-validation-for="From" class="text-danger"></span>
+
+            <label for="too">Too</labe>
+                <input id="too" class="form-control" type="text" asp-for="Too"/>
+                <span asp-validation-for="Too" class="text-danger"></span>
+                <label for="amount"></label>Amount</labe>
+                    <input id="amount" class="form-control" type="number" asp-for="Amount"/>
+                <span asp-validation-for="Amount" class="text-danger"></span>
+
+                    <button class="btn btn-primary">Create</button>
+
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_validationScriptsPartial" />
+    }
+}

@@ -1,0 +1,32 @@
+﻿@model Movie
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="mb-4">
+            <h2>Create a Movie</h2>
+        </div>
+        <div class="mb-4">
+            <label>No</label>
+            <input asp-for="no" type="text" class="form-control" />
+            <span asp-validation-for="no" class="text-danger"></span>
+        </div>
+        <div class="mb-4">
+            <label>Name</label>
+            <input asp-for="Name" type="text" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-4">
+            <label>Director Name</label>
+            <input asp-for="Director" type="text" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">
+            Create
+        </button>
+    </div>
+</form>
+
+@section scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,24 @@
+﻿@model Login
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Login</h1>
+<form method="post">
+   <label for="email" >Email</label>
+   <input id="email" class="form-control" asp-for="Email" type="email"/>
+   <span asp-validation-for="Email" class="text-danger"></span>
+
+    <label for="password">Email</label>
+    <input id="password" class="form-control" asp-for="Password" type="password" />
+    <span asp-validation-for="Password" class="text-danger"></span>
+
+    <div class="checkbox">
+        <label>Remember Me
+            <input asp-for="RememberMe" />
+        </label>
+    </div>
+
+    <button class="btn btn-primary">Login</button>
+</form>

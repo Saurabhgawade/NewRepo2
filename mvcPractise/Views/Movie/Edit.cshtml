@@ -1,0 +1,30 @@
+﻿@model Movie
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Edit</h1>
+<form method="post">
+    <label for="id">Id</label>
+    <input readonly id="id" class="form-control" asp-for="id" type="no" />
+    <span asp-validation-for="id" class="text-danger"></span>
+
+    <label for="Name">Name</label>
+    <input id="Name" class="form-control" asp-for="Name" type="text" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+    <label for="dir">Director</label>
+    <input id="dir" class="form-control" asp-for="Director" type="text" />
+    <span asp-validation-for="Director" class="text-danger"></span>
+
+    <button class="btn btn-success">
+        Create
+    </button>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

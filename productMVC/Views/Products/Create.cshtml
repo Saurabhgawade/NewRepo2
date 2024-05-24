@@ -1,0 +1,30 @@
+﻿@model Product
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>
+    Cretae Product
+</h1>
+<form method="post">
+    <label for="id">Id</label>
+    <input asp-for="productId" id="id" type="number" class="form-control" />
+    <span asp-validation-for="productId" class="text-danger"></span>
+
+    <label for="name">Name</label>
+    <input asp-for="productName" type="text" id="name" class="form-control" />
+    <span asp-validation-for="productName" class="text-danger"></span>
+
+    <label for="price">Price</label>
+    <input type="number" id="price" class="form-control" asp-for="productPrice"/>
+    <span asp-validation-for="productPrice" class="text-danger"></span>
+
+    <button class="btn btn-primary">Create</button>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_validationScriptsPartial" />
+    }
+}

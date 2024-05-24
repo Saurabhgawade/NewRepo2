@@ -1,0 +1,44 @@
+﻿@model productMVC.Controllers.MyViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<a class="btn btn-primary" asp-controller="Products" asp-action="Create">Create</a>
+
+<div>
+    <table class="table table-border">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.ProductsList){
+                <tr>
+                    <td>@item.productId</td>
+                    <td>@item.productName</td>
+                    <td>@item.productPrice</td>
+                    <td>
+                        <div>
+                        <a class="btn btn-primary" asp-controller="Products" asp-action="Edit" asp-route-id="@item.productId">Edit</a>
+                        <a class="btn btn-danger" asp-controller="Products" asp-action="Delete" asp-route-id="@item.productId">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
